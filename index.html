@@ -8,28 +8,32 @@
 	<title>landing PAge</title>
 </head>
 
-<body>
+<body id="sezione">
+	<div id="divDisplay">
+		<section id="center-content">
+			<img data-reveal-delay="200" class="reveal-from-bottom is-revealed"
+				src="immagini/patch_logo.ae46ae4e0cf9e67bd1a2.png" width="400" alt="">
+		</section>
+		<form action="landingPage.php" method="POST">
+			<label for="name">Company Name</label>
+			<input type="text" name="nome" id="name" placeholder="Insert Name Company">
 
-	<form action="landingPage.php" method="POST">
-		<label for="name">Company Name</label>
-		<input type="text" name="nome" id="name" placeholder="Insert Name Company">
+			<label for="email">Contact mail</label>
+			<input type="email" name="email" id="email" placeholder="Insert email">
 
-		<label for="email">Contact mail</label>
-		<input type="email" name="email" id="email" placeholder="Insert email">
+			<label for="discord_handle">Discord handle</label>
+			<input type="text" name="discord_handle" id="discord_handle" placeholder="Insert discord handle">
 
-		<label for="discord_handle">Discord handle</label>
-		<input type="text" name="discord_handle" id="discord_handle" placeholder="Insert discord handle">
+			<label for="application">Application Name</label>
+			<input type="text" name="application_name" id="application_name" placeholder="Insert Application name">
 
-		<label for="application">Application Name</label>
-		<input type="text" name="application_name" id="application_name" placeholder="Insert Application name">
+			<label for="name">Application avarage size</label>
+			<input type="text" name="application_avarage" id="application_avarage"
+				placeholder="Insert Application avarage">
+			<input type="submit" name="Invia" id="InvioDati">
 
-		<label for="name">Application avarage size</label>
-		<input type="text" name="application_avarage" id="application_avarage" placeholder="Insert Application avarage">
-		<input type="submit" name="Invia" id="InvioDati">
-
-
-
-	</form>
+		</form>
+	</div>
 
 
 </body>
